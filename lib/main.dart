@@ -15,7 +15,11 @@ class MyFirstApp extends StatelessWidget {
           title: Text('Hacker App'),
         ),
         body: Center(
-          child: Text('Hello World!'),
+          child: Container(
+            color: Colors.blue,
+            height: 100,
+            width: 100,
+          ),
         )
       )
     );

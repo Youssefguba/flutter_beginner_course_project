@@ -6,6 +6,9 @@ void main() {
 }
 
 class MyFirstApp extends StatelessWidget {
+  final double widthOfContainer = 30;
+  final double heightOfContainer = 50;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,28 +21,28 @@ class MyFirstApp extends StatelessWidget {
             color: Colors.blue,
             height: 200,
             width: 200,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
-                  height: 30,
-                  width: 50,
+                  height: heightOfContainer,
+                  width: widthOfContainer,
                   color: Colors.red,
                 ),
                 Container(
-                  height: 30,
-                  width: 50,
+                  height: heightOfContainer,
+                  width: widthOfContainer,
                   color: Colors.orange,
                 ),
                 Container(
-                  height: 30,
-                  width: 50,
+                  height: heightOfContainer,
+                  width: widthOfContainer,
                   color: Colors.green,
                 ),
                 Container(
-                  height: 30,
-                  width: 50,
+                  height: heightOfContainer,
+                  width: widthOfContainer,
                   color: Colors.black,
                 ),
               ],

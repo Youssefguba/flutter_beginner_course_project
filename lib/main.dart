@@ -25,10 +25,10 @@ class MyFirstApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                buildContainer(Colors.red),
-                buildContainer(Colors.green),
-                buildContainer(Colors.black),
-                buildContainer(Colors.amber),
+                _buildContainer(Colors.red),
+                _buildContainer(Colors.green),
+                _buildContainer(Colors.black),
+                _buildContainer(Colors.amber),
               ],
             ),
           ),
@@ -37,7 +37,7 @@ class MyFirstApp extends StatelessWidget {
     );
   }
 
-  Container buildContainer(Color color) {
+  Container _buildContainer(Color color) {
     return Container(
       height: heightOfContainer,
       width: widthOfContainer,

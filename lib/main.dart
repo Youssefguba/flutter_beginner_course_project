@@ -25,31 +25,23 @@ class MyFirstApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Container(
-                  height: heightOfContainer,
-                  width: widthOfContainer,
-                  color: Colors.red,
-                ),
-                Container(
-                  height: heightOfContainer,
-                  width: widthOfContainer,
-                  color: Colors.orange,
-                ),
-                Container(
-                  height: heightOfContainer,
-                  width: widthOfContainer,
-                  color: Colors.green,
-                ),
-                Container(
-                  height: heightOfContainer,
-                  width: widthOfContainer,
-                  color: Colors.black,
-                ),
+                buildContainer(Colors.red),
+                buildContainer(Colors.green),
+                buildContainer(Colors.black),
+                buildContainer(Colors.amber),
               ],
             ),
           ),
         ),
       ),
+    );
+  }
+
+  Container buildContainer(Color color) {
+    return Container(
+      height: heightOfContainer,
+      width: widthOfContainer,
+      color: color,
     );
   }
 }

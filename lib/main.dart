@@ -6,7 +6,6 @@ void main() {
 }
 
 class MyFirstApp extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,24 +18,10 @@ class MyFirstApp extends StatelessWidget {
             color: Colors.blue,
             height: 100,
             width: 100,
+            child: Center(child: Text('Hello World!')),
           ),
-        )
-      )
+        ),
+      ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

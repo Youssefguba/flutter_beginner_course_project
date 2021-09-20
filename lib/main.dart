@@ -16,9 +16,34 @@ class MyFirstApp extends StatelessWidget {
         body: Center(
           child: Container(
             color: Colors.blue,
-            height: 100,
-            width: 100,
-            child: Center(child: Text('Hello World!')),
+            height: 200,
+            width: 200,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  height: 30,
+                  width: 50,
+                  color: Colors.red,
+                ),
+                Container(
+                  height: 30,
+                  width: 50,
+                  color: Colors.orange,
+                ),
+                Container(
+                  height: 30,
+                  width: 50,
+                  color: Colors.green,
+                ),
+                Container(
+                  height: 30,
+                  width: 50,
+                  color: Colors.black,
+                ),
+              ],
+            ),
           ),
         ),
       ),
